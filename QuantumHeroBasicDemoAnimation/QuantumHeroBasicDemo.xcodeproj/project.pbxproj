@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B44BEA923F37577003D7674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B44BEA823F37577003D7674 /* AppDelegate.swift */; };
+		5B44BEAB23F37577003D7674 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5B44BEAA23F37577003D7674 /* GameScene.sks */; };
+		5B44BEAD23F37577003D7674 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5B44BEAC23F37577003D7674 /* Actions.sks */; };
+		5B44BEAF23F37577003D7674 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B44BEAE23F37577003D7674 /* GameScene.swift */; };
+		5B44BEB123F37577003D7674 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B44BEB023F37577003D7674 /* GameViewController.swift */; };
+		5B44BEB423F37577003D7674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B44BEB223F37577003D7674 /* Main.storyboard */; };
+		5B44BEB623F3757F003D7674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B44BEB523F3757F003D7674 /* Assets.xcassets */; };
+		5B44BEB923F3757F003D7674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B44BEB723F3757F003D7674 /* LaunchScreen.storyboard */; };
+		5B44BEC423F37580003D7674 /* QuantumHeroBasicDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B44BEC323F37580003D7674 /* QuantumHeroBasicDemoTests.swift */; };
+		5B44BECF23F37580003D7674 /* QuantumHeroBasicDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B44BECE23F37580003D7674 /* QuantumHeroBasicDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B44BEC023F37580003D7674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B44BE9D23F37577003D7674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B44BEA423F37577003D7674;
+			remoteInfo = QuantumHeroBasicDemo;
+		};
+		5B44BECB23F37580003D7674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B44BE9D23F37577003D7674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B44BEA423F37577003D7674;
+			remoteInfo = QuantumHeroBasicDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B44BEA523F37577003D7674 /* QuantumHeroBasicDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantumHeroBasicDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B44BEA823F37577003D7674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B44BEAA23F37577003D7674 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		5B44BEAC23F37577003D7674 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		5B44BEAE23F37577003D7674 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5B44BEB023F37577003D7674 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5B44BEB323F37577003D7674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B44BEB523F3757F003D7674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B44BEB823F3757F003D7674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B44BEBA23F3757F003D7674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B44BEBF23F37580003D7674 /* QuantumHeroBasicDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuantumHeroBasicDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B44BEC323F37580003D7674 /* QuantumHeroBasicDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantumHeroBasicDemoTests.swift; sourceTree = "<group>"; };
+		5B44BEC523F37580003D7674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B44BECA23F37580003D7674 /* QuantumHeroBasicDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuantumHeroBasicDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B44BECE23F37580003D7674 /* QuantumHeroBasicDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantumHeroBasicDemoUITests.swift; sourceTree = "<group>"; };
+		5B44BED023F37580003D7674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B44BEA223F37577003D7674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B44BEBC23F37580003D7674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B44BEC723F37580003D7674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B44BE9C23F37577003D7674 = {
+			isa = PBXGroup;
+			children = (
+				5B44BEA723F37577003D7674 /* QuantumHeroBasicDemo */,
+				5B44BEC223F37580003D7674 /* QuantumHeroBasicDemoTests */,
+				5B44BECD23F37580003D7674 /* QuantumHeroBasicDemoUITests */,
+				5B44BEA623F37577003D7674 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B44BEA623F37577003D7674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B44BEA523F37577003D7674 /* QuantumHeroBasicDemo.app */,
+				5B44BEBF23F37580003D7674 /* QuantumHeroBasicDemoTests.xctest */,
+				5B44BECA23F37580003D7674 /* QuantumHeroBasicDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B44BEA723F37577003D7674 /* QuantumHeroBasicDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5B44BEA823F37577003D7674 /* AppDelegate.swift */,
+				5B44BEAA23F37577003D7674 /* GameScene.sks */,
+				5B44BEAC23F37577003D7674 /* Actions.sks */,
+				5B44BEAE23F37577003D7674 /* GameScene.swift */,
+				5B44BEB023F37577003D7674 /* GameViewController.swift */,
+				5B44BEB223F37577003D7674 /* Main.storyboard */,
+				5B44BEB523F3757F003D7674 /* Assets.xcassets */,
+				5B44BEB723F3757F003D7674 /* LaunchScreen.storyboard */,
+				5B44BEBA23F3757F003D7674 /* Info.plist */,
+			);
+			path = QuantumHeroBasicDemo;
+			sourceTree = "<group>";
+		};
+		5B44BEC223F37580003D7674 /* QuantumHeroBasicDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B44BEC323F37580003D7674 /* QuantumHeroBasicDemoTests.swift */,
+				5B44BEC523F37580003D7674 /* Info.plist */,
+			);
+			path = QuantumHeroBasicDemoTests;
+			sourceTree = "<group>";
+		};
+		5B44BECD23F37580003D7674 /* QuantumHeroBasicDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B44BECE23F37580003D7674 /* QuantumHeroBasicDemoUITests.swift */,
+				5B44BED023F37580003D7674 /* Info.plist */,
+			);
+			path = QuantumHeroBasicDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B44BEA423F37577003D7674 /* QuantumHeroBasicDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B44BED323F37580003D7674 /* Build configuration list for PBXNativeTarget "QuantumHeroBasicDemo" */;
+			buildPhases = (
+				5B44BEA123F37577003D7674 /* Sources */,
+				5B44BEA223F37577003D7674 /* Frameworks */,
+				5B44BEA323F37577003D7674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuantumHeroBasicDemo;
+			productName = QuantumHeroBasicDemo;
+			productReference = 5B44BEA523F37577003D7674 /* QuantumHeroBasicDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B44BEBE23F37580003D7674 /* QuantumHeroBasicDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B44BED623F37580003D7674 /* Build configuration list for PBXNativeTarget "QuantumHeroBasicDemoTests" */;
+			buildPhases = (
+				5B44BEBB23F37580003D7674 /* Sources */,
+				5B44BEBC23F37580003D7674 /* Frameworks */,
+				5B44BEBD23F37580003D7674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B44BEC123F37580003D7674 /* PBXTargetDependency */,
+			);
+			name = QuantumHeroBasicDemoTests;
+			productName = QuantumHeroBasicDemoTests;
+			productReference = 5B44BEBF23F37580003D7674 /* QuantumHeroBasicDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B44BEC923F37580003D7674 /* QuantumHeroBasicDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B44BED923F37580003D7674 /* Build configuration list for PBXNativeTarget "QuantumHeroBasicDemoUITests" */;
+			buildPhases = (
+				5B44BEC623F37580003D7674 /* Sources */,
+				5B44BEC723F37580003D7674 /* Frameworks */,
+				5B44BEC823F37580003D7674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B44BECC23F37580003D7674 /* PBXTargetDependency */,
+			);
+			name = QuantumHeroBasicDemoUITests;
+			productName = QuantumHeroBasicDemoUITests;
+			productReference = 5B44BECA23F37580003D7674 /* QuantumHeroBasicDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B44BE9D23F37577003D7674 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Skyler Gao";
+				TargetAttributes = {
+					5B44BEA423F37577003D7674 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					5B44BEBE23F37580003D7674 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5B44BEA423F37577003D7674;
+					};
+					5B44BEC923F37580003D7674 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5B44BEA423F37577003D7674;
+					};
+				};
+			};
+			buildConfigurationList = 5B44BEA023F37577003D7674 /* Build configuration list for PBXProject "QuantumHeroBasicDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B44BE9C23F37577003D7674;
+			productRefGroup = 5B44BEA623F37577003D7674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B44BEA423F37577003D7674 /* QuantumHeroBasicDemo */,
+				5B44BEBE23F37580003D7674 /* QuantumHeroBasicDemoTests */,
+				5B44BEC923F37580003D7674 /* QuantumHeroBasicDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B44BEA323F37577003D7674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B44BEB423F37577003D7674 /* Main.storyboard in Resources */,
+				5B44BEAB23F37577003D7674 /* GameScene.sks in Resources */,
+				5B44BEB623F3757F003D7674 /* Assets.xcassets in Resources */,
+				5B44BEB923F3757F003D7674 /* LaunchScreen.storyboard in Resources */,
+				5B44BEAD23F37577003D7674 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B44BEBD23F37580003D7674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B44BEC823F37580003D7674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B44BEA123F37577003D7674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B44BEAF23F37577003D7674 /* GameScene.swift in Sources */,
+				5B44BEB123F37577003D7674 /* GameViewController.swift in Sources */,
+				5B44BEA923F37577003D7674 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B44BEBB23F37580003D7674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B44BEC423F37580003D7674 /* QuantumHeroBasicDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B44BEC623F37580003D7674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B44BECF23F37580003D7674 /* QuantumHeroBasicDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B44BEC123F37580003D7674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B44BEA423F37577003D7674 /* QuantumHeroBasicDemo */;
+			targetProxy = 5B44BEC023F37580003D7674 /* PBXContainerItemProxy */;
+		};
+		5B44BECC23F37580003D7674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B44BEA423F37577003D7674 /* QuantumHeroBasicDemo */;
+			targetProxy = 5B44BECB23F37580003D7674 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B44BEB223F37577003D7674 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B44BEB323F37577003D7674 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B44BEB723F3757F003D7674 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B44BEB823F3757F003D7674 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B44BED123F37580003D7674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B44BED223F37580003D7674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B44BED423F37580003D7674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NFCM8MHXU;
+				INFOPLIST_FILE = QuantumHeroBasicDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sgrs.QuantumHeroBasicDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B44BED523F37580003D7674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NFCM8MHXU;
+				INFOPLIST_FILE = QuantumHeroBasicDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sgrs.QuantumHeroBasicDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B44BED723F37580003D7674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NFCM8MHXU;
+				INFOPLIST_FILE = QuantumHeroBasicDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sgrs.QuantumHeroBasicDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuantumHeroBasicDemo.app/QuantumHeroBasicDemo";
+			};
+			name = Debug;
+		};
+		5B44BED823F37580003D7674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NFCM8MHXU;
+				INFOPLIST_FILE = QuantumHeroBasicDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sgrs.QuantumHeroBasicDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuantumHeroBasicDemo.app/QuantumHeroBasicDemo";
+			};
+			name = Release;
+		};
+		5B44BEDA23F37580003D7674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NFCM8MHXU;
+				INFOPLIST_FILE = QuantumHeroBasicDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sgrs.QuantumHeroBasicDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuantumHeroBasicDemo;
+			};
+			name = Debug;
+		};
+		5B44BEDB23F37580003D7674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NFCM8MHXU;
+				INFOPLIST_FILE = QuantumHeroBasicDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sgrs.QuantumHeroBasicDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuantumHeroBasicDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B44BEA023F37577003D7674 /* Build configuration list for PBXProject "QuantumHeroBasicDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B44BED123F37580003D7674 /* Debug */,
+				5B44BED223F37580003D7674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B44BED323F37580003D7674 /* Build configuration list for PBXNativeTarget "QuantumHeroBasicDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B44BED423F37580003D7674 /* Debug */,
+				5B44BED523F37580003D7674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B44BED623F37580003D7674 /* Build configuration list for PBXNativeTarget "QuantumHeroBasicDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B44BED723F37580003D7674 /* Debug */,
+				5B44BED823F37580003D7674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B44BED923F37580003D7674 /* Build configuration list for PBXNativeTarget "QuantumHeroBasicDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B44BEDA23F37580003D7674 /* Debug */,
+				5B44BEDB23F37580003D7674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B44BE9D23F37577003D7674 /* Project object */;
+}
