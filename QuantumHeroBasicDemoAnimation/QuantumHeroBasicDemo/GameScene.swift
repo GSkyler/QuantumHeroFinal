@@ -50,6 +50,12 @@ class GameScene: SKScene {
     private var mazeNodes : Array<SKSpriteNode> = []
     private var laser1Moved : Bool = false
     private var laser2Moved : Bool = false
+    private var laser1Vert : Bool = false
+    private var laser2Vert : Bool = false
+    private var timeLBL : SKLabelNode?
+    private var scoreLBL : SKLabelNode?
+    let defaults = UserDefaults.standard
+    private var score = 0
     
     override func didMove(to view: SKView)   {
 //        loadMazeLevel()
@@ -68,11 +74,17 @@ class GameScene: SKScene {
         self.clone2Switch = self.childNode(withName: "switchToClone2") as? SKSpriteNode
         self.submitSwitch = self.childNode(withName: "confirmMoves") as? SKSpriteNode
         
+        self.timeLBL = self.childNode(withName: "timeLBL") as? SKLabelNode
+        self.scoreLBL = self.childNode(withName: "scoreLBL") as? SKLabelNode
+        
+//        defaults.set(0, forKey: "score")
+        score = defaults.integer(forKey: "score")
+        
         selectedChar = player
         characters = [clone!, clone2!]
         
-//        generateLevelOne()
-        loadRandomLevel()
+        generateLevelOne()
+//        loadRandomLevel()
     }
     
 //MARK: MOVEMENT
@@ -156,7 +168,7 @@ class GameScene: SKScene {
 //  MARK: CLONE ANIMATION
     
     func doubleTapped() {
-        runCount = 15
+        runCount = 12
         selectedChar?.resetMoves()
         selectedChar?.addMoves(newMoves: moves, newTimes: moveTiming)
         firstMove = true
@@ -225,8 +237,15 @@ class GameScene: SKScene {
     var timeOfLastMove = 0.0
     
     @objc func fireTimer() {
+//        runCount += 0.05
+//
+//        if runCount >= 15 {
+//            timer?.invalidate()
+//            reset()
+//            runCount = 0.0
+//        }
+        timeLBL?.text = "Time: " + String(round(1000*(12-runCount))/1000)
         runCount += 0.05
-
         if runCount >= 12 {
             timer?.invalidate()
             reset()
@@ -273,18 +292,22 @@ class GameScene: SKScene {
             if((player?.getSprite()?.position == plate?.position || clone?.getSprite()?.position == plate?.position ||
                 clone2?.getSprite()?.position == plate?.position) && !laser1Moved) {
                 laser1?.position.y += 1000
+                laser1?.position.x += 2000
                 laser1Moved = true
             }
             else if(!(player?.getSprite()?.position == plate?.position || clone?.getSprite()?.position == plate?.position || clone2?.getSprite()?.position == plate?.position) && laser1Moved){
                 laser1?.position.y -= 1000
+                laser1?.position.x -= 2000
                 laser1Moved = false
             }
             if ((player?.getSprite()?.position == plate2?.position || clone?.getSprite()?.position == plate2?.position || clone2?.getSprite()?.position == plate2?.position) && !laser2Moved) {
                 laser2?.position.y += 1000
+                laser2?.position.x += 2000
                 laser2Moved = true
             }
             else if(!(player?.getSprite()?.position == plate2?.position || clone?.getSprite()?.position == plate2?.position || clone2?.getSprite()?.position == plate2?.position) && laser2Moved) {
                 laser2?.position.y -= 1000
+                laser2?.position.x -= 2000
                 laser2Moved = false
             }
         }
@@ -301,12 +324,75 @@ class GameScene: SKScene {
         for wall in walls {
             if player?.getSprite()?.position == wall.position {
                 player?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
             }
             if clone?.getSprite()?.position == wall.position {
                 clone?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
             }
             if clone2?.getSprite()?.position == wall.position {
                 clone2?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
+            }
+        }
+    }
+    
+    func checkLaserCollision() {
+        if laser1Vert {
+            if player?.getSprite()?.position.x == laser1?.position.x {
+                player?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
+            }
+            if clone?.getSprite()?.position.x == laser1?.position.x {
+                clone?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
+            }
+            if clone2?.getSprite()?.position.x == laser1?.position.x {
+                clone2?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
+            }
+        }
+        else if !laser1Vert{
+            if player?.getSprite()?.position.y == laser1?.position.y {
+                player?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
+            }
+            if clone?.getSprite()?.position.y == laser1?.position.y {
+                clone?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
+            }
+            if clone2?.getSprite()?.position.y == laser1?.position.y {
+                clone2?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
+            }
+        }
+        
+        if laser2Vert {
+            if player?.getSprite()?.position.x == laser2?.position.x {
+                player?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
+            }
+            if clone?.getSprite()?.position.x == laser2?.position.x {
+                clone?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
+            }
+            if clone2?.getSprite()?.position.x == laser2?.position.x {
+                clone2?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
+            }
+        }
+        else if !laser2Vert{
+            if player?.getSprite()?.position.y == laser2?.position.y {
+                player?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
+            }
+            if clone?.getSprite()?.position.y == laser2?.position.y {
+                clone?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
+            }
+            if clone2?.getSprite()?.position.y == laser2?.position.y {
+                clone2?.getSprite()?.position = CGPoint(x: startX, y: startY)
+                score -= 15
             }
         }
     }
@@ -315,6 +401,11 @@ class GameScene: SKScene {
     
     func startNextLevel() {
         reset()
+        
+        runCount = 12
+        
+        score += 10
+        defaults.set(score, forKey: "score")
         if onMazeLevel {
             for wall in walls{
                 wall.removeFromParent()
@@ -344,6 +435,9 @@ class GameScene: SKScene {
             redWallsMoved = false
         }
         reset()
+        player?.resetMoves()
+        clone?.resetMoves()
+        clone2?.resetMoves()
     }
     
     func addChildren() {
@@ -461,10 +555,13 @@ class GameScene: SKScene {
         addStartNodes()
         laser1 = SKSpriteNode(imageNamed: "laserVert.png")
         laser2 = SKSpriteNode(imageNamed: "laser.png")
-        laser1?.position = CGPoint(x:240, y:0)
+        laser1?.position = CGPoint(x:200, y:0)
         laser1?.size = CGSize(width: 20, height: 660)
         laser2?.position = CGPoint(x:0, y:200)
         laser2?.size = CGSize(width: 768, height: 20)
+        
+        laser1Vert = true
+        laser2Vert = false
         
         plate = SKSpriteNode(imageNamed: "plate.png")
         plate?.size = CGSize(width: 50, height: 50)
@@ -472,7 +569,7 @@ class GameScene: SKScene {
         
         plate2 = SKSpriteNode(imageNamed: "plate.png")
         plate2?.size = CGSize(width: 50, height: 50)
-        plate2?.position = CGPoint(x: -300, y: -300)
+        plate2?.position = CGPoint(x: -300, y: -100)
         
         playerNode?.position = CGPoint(x: 300,y: 0)
         cloneNode?.position = CGPoint(x: 300,y: 0)
@@ -497,6 +594,9 @@ class GameScene: SKScene {
         laser1?.size = CGSize(width: 768, height: 20)
         laser2?.position = CGPoint(x:0, y:150)
         laser2?.size = CGSize(width: 768, height: 20)
+        
+        laser1Vert = false
+        laser2Vert = false
         
         plate = SKSpriteNode(imageNamed: "plate.png")
         plate?.size = CGSize(width: 50, height: 50)
@@ -526,10 +626,13 @@ class GameScene: SKScene {
         levelThree = true
         laser1 = SKSpriteNode(imageNamed: "laserVert.png")
         laser2 = SKSpriteNode(imageNamed: "laserVert.png")
-        laser1?.position = CGPoint(x:160, y:0)
+        laser1?.position = CGPoint(x:150, y:0)
         laser1?.size = CGSize(width: 20, height: 660)
-        laser2?.position = CGPoint(x:-160, y:0)
+        laser2?.position = CGPoint(x:-150, y:0)
         laser2?.size = CGSize(width: 20, height: 660)
+        
+        laser1Vert = true
+        laser2Vert = true
         
         plate = SKSpriteNode(imageNamed: "plate.png")
         plate?.size = CGSize(width: 50, height: 50)
@@ -539,9 +642,9 @@ class GameScene: SKScene {
         plate2?.size = CGSize(width: 50, height: 50)
         plate2?.position = CGPoint(x: 250, y: -50)
         
-        playerNode?.position = CGPoint(x: 300,y: -300)
-        cloneNode?.position = CGPoint(x: 300,y: -300)
-        clone1Node?.position = CGPoint(x: 300,y: -300)
+        playerNode?.position = CGPoint(x: 300,y: 0)
+        cloneNode?.position = CGPoint(x: 300,y: 0)
+        clone1Node?.position = CGPoint(x: 300,y: 0)
         
         door?.position = CGPoint(x: -300, y: 0)
         
@@ -552,7 +655,7 @@ class GameScene: SKScene {
         levelOneNodes.append(laser2!)
 
         startX = 300
-        startY = -300
+        startY = 0
     }
     
     func addStartNodes() {
@@ -725,7 +828,7 @@ class GameScene: SKScene {
 //MARK: TOUCH FUNCTIONS
     
     func touchDown(atPoint pos : CGPoint) {
-        if(!startedAnimation){
+//        if(!startedAnimation){
             switch atPoint(pos).name {
             case "switchToPlayer":
                 switchToPlayer()
@@ -746,10 +849,14 @@ class GameScene: SKScene {
                     animateCharacter(index: 0, char: character)
                 }
                 break
+            case "skipLevel":
+                startNextLevel()
+                score -= 25
+                break
             default:
                 break
             }
-        }
+//        }
     }
     
     func touchMoved(toPoint pos : CGPoint) {
@@ -801,6 +908,11 @@ class GameScene: SKScene {
         if onMazeLevel {
             checkWallCollision()
         }
+        else {
+            checkLaserCollision()
+        }
+    
+        scoreLBL?.text = "Score: " + String(score)
     }
 }
 
